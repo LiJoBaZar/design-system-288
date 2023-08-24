@@ -1,0 +1,31 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Styles/Z-index" />
+
+# Z-index scale
+
+```scss
+@use "@areyesdev/design-system/src/settings/zindex";
+```
+
+Contamos con una escala de índice z para posicionar elementos en la página. Estas son variables privadas:
+
+```
+$_1: 1;
+$_2: 2;
+$_3: 3;
+$_4: 4;
+$_5: 5;
+$_6: 6;
+$_7: 7;
+$_8: 8;
+$_9: 9;
+$_10: 10;
+```
+
+Para posicionar un nuevo elemento, cree una nueva variable pública y agréguela en la escala, como por ejemplo:
+
+```
+$header: $_8;
+$modal: $_9;
+```
