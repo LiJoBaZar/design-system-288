@@ -1,5 +1,6 @@
 import * as NextImage from "next/image";
 import smartBuyTheme from "./smartBuyTheme";
+import "../src/docs/index.scss";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

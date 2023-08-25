@@ -8,6 +8,6 @@ export default {
   component: Avatar,
 } as Meta;
 
-const Template: Story<AvatarProps> = (args) => <Avatar {...args} src="https://storybook.js.org/images/placeholders/350x150.png" />;
+const Template: Story<AvatarProps> = (args) => <Avatar {...args} src="/Avatar.png" />;
 
 export const Medium = Template.bind({});
