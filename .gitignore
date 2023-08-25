@@ -1,4 +1,4 @@
-storybook-static
+
 # Yarn without zero-install - https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
 .yarn/*
 !.yarn/patches
