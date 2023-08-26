@@ -1,0 +1,64 @@
+@use "../settings/border";
+@use "../settings/colors";
+@use "../settings/spacing";
+@use "../settings/typography";
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: colors.$text-primary;
+    font-size: 1.2rem;
+    padding: spacing.$sm;
+    // border: 1px solid rgba($color: #000, $alpha: 0.1);
+    border-radius: border.$radius-large;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.75);
+
+    &--light {
+        background: colors.$bg;
+    }
+
+    &--dark {
+        color: colors.$white;
+        background: colors.$bg-darkTheme;
+        box-shadow: 0px 0px 4px 0px rgba(colors.$white, 0.75);
+
+    }
+
+    &--large {
+        max-width: 32rem;
+    }
+
+    &--medium {
+        max-width: 27rem;
+    }
+
+    &--small {
+        max-width: 22rem;
+    }
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    &--img {
+        border-radius: border.$radius-large;
+        max-width: 70%;
+    }
+}
+
+.dataContainer{
+    display: flex;
+    flex-direction: column;
+
+    &--p{
+        margin-block: 0px;
+        padding-bottom: 10px;
+        font: typography.$b400-bold;
+    }
+
+    &--span{
+        font: typography.$b300-regular;
+    }
+}
