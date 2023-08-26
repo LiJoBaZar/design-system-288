@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install",
+    "commit": "cz"
   },
   "dependencies": {
     "next": "12.1.0",
@@ -39,6 +41,7 @@
     "eslint": "8.11.0",
     "eslint-config-next": "12.1.0",
     "eslint-plugin-storybook": "^0.5.7",
+    "husky": "^8.0.3",
     "jest": "^27.5.1",
     "jest-axe": "^5.0.1",
     "resolve-url-loader": "^5.0.0",
